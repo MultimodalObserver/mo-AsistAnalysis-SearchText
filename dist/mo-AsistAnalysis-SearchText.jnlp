@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="mo-AsistAnalysis-SearchText.jnlp">
+  <information>
+    <title>mo-AsistAnalysis-SearchText</title>
+    <vendor>Lathy</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\i18n-1.1.2-SNAPSHOT.jar" size="5097" download="eager" />
+    <jar href="lib\lucene-analyzers-common-8.8.0.jar" size="1688798" download="eager" />
+    <jar href="lib\lucene-core-8.8.0.jar" size="3565035" download="eager" />
+    <jar href="lib\lucene-misc-8.8.0.jar" size="99416" download="eager" />
+    <jar href="lib\lucene-queryparser-8.8.0.jar" size="382670" download="eager" />
+    <jar href="lib\multimodal-observer-0.0.1.jar" size="18439276" download="eager" />
+    <jar href="mo-AsistAnalysis-SearchText.jar" size="49237" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="controller.Main"  name="mo-AsistAnalysis-SearchText" />
+  <update check="always"/>
+</jnlp>
