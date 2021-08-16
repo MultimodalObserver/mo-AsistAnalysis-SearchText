@@ -14,7 +14,7 @@
     <jar href="lib\lucene-misc-8.8.0.jar" size="99416" download="eager" />
     <jar href="lib\lucene-queryparser-8.8.0.jar" size="382670" download="eager" />
     <jar href="lib\multimodal-observer-0.0.1.jar" size="18439276" download="eager" />
-    <jar href="mo-AsistAnalysis-SearchText.jar" size="49237" download="eager" />
+    <jar href="mo-AsistAnalysis-SearchText.jar" size="49409" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="controller.Main"  name="mo-AsistAnalysis-SearchText" />
   <update check="always"/>

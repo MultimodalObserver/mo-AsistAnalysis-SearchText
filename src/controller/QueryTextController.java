@@ -251,7 +251,7 @@ public class QueryTextController implements Initializable {
             //System.out.println("Nombre plugin: "+plugin.getId() );
             //System.out.println("Nombre plugin: "+plugin.getPath().toString() );
             if(plugin.getPath().toString().contains("Coding")){
-                System.out.println("Coooooooooooooooooooooooooooo: "+plugin.getPath().toString() );
+                System.out.println("Plugin de codigo: "+plugin.getPath().toString() );
                 coding=plugin;
             }
         }  
@@ -318,16 +318,16 @@ public class QueryTextController implements Initializable {
     }
     
     public void set_ListFileTemporal(List<File> listFile) {
-        System.out.println("Entro acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        System.out.println("Entro en setfileTemporal");
         try {
-            System.out.println("Entro acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            System.out.println("Entro en try de listfiletemporal");
             
             
             pIndicator.setVisible(true);
             this.listFileDocsTemporal = listFile;
             String nombre = "\\analysis\\asist-analysis\\IndexFiles";//Se crea una carpeta con este nombre
             
-            System.out.println("Acaaaaaaaaa"+pathTranscription+nombre);
+            System.out.println("Nombre del path de transcripcion"+pathTranscription+nombre);
             
             //System.out.println("Path parent: "+listFileDocsTemporal.get(0).getParent());
             
@@ -401,14 +401,6 @@ public class QueryTextController implements Initializable {
                 }
             });
             
-//System.out.println(combine(listFileDocsTemporal.get(0).getAbsolutePath(), listFileDocsTemporal.get(1).getAbsolutePath()));
-//////        for(int i= 0; i<listFileDocsTemporal.size();i++){
-//////            index(listFileDocsTemporal.get(i).getAbsolutePath());
-//////        
-//////        }
-//////        writer.close();
-//index("C:\\Users\\Lathy\\Desktop\\NuevaCarpeta");
-//count();
         } catch (IOException ex) {
             Logger.getLogger(QueryTextController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1139,7 +1131,13 @@ public class QueryTextController implements Initializable {
                     
                 
                 }else{//No existe ningun resultado
-                    
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Informacion");
+                    alert.setHeaderText(null);
+                    alert.setContentText("La consulta esta incorrecta "+ "\n" + "Las consultas son: \n"
+                    + "- termino o frase\n"+"- termino AND termino\n"+"- termino OR termino");
+
+                    alert.showAndWait();
                     
                     
                 
